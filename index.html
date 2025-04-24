@@ -1,0 +1,40 @@
+<section id="roast-aayush" class="section">
+  <h2>Roast Aayush</h2>
+  <p>Having a bad day? Here's a fresh roast for our boy Aayush. Tap the button below to get a new one!</p>
+  <button id="roastBtn">Roast Him!</button>
+  <div id="roastOutput" class="roast-box">Click the button to roast Aayush!</div>
+</section>
+
+<script>
+  const roasts = [
+    "Aayush’s brain is like a software update — always pending.",
+    "If Aayush was any slower, we’d have to reboot him.",
+    "Aayush thinks Wi-Fi is short for ‘Why Fight?’",
+    "Aayush tried to climb a thought but fell off.",
+    "He once stared at a juice box because it said 'concentrate.'",
+    "If laziness was a sport, Aayush would win… but not show up.",
+    "Aayush’s keyboard fears him — he only uses it to type ‘LOL.’",
+    "Even Google doesn’t have the answers to what Aayush thinks.",
+    "Aayush once brought a spoon to a gunfight — for soup.",
+    "NASA rejected Aayush — they said his space was too empty.",
+    "He’s the reason traffic lights have patience settings.",
+    "He tried to code with a calculator.",
+    "Aayush's Wi-Fi password is 'I forget123'.",
+    "Aayush’s memory is so bad, even RAM feels sorry for him.",
+    "He's so slow, even a snail gave him a pity race win.",
+    "Aayush thought HTML is a disease.",
+    "He tried to use CTRL + Z in real life.",
+    "He charges his phone to feel productive.",
+    "Aayush once rebooted his fridge thinking it was lagging.",
+    "He thinks JavaScript is coffee for coders.",
+    // Add more roasts here up to 100 or beyond...
+  ];
+
+  const roastBtn = document.getElementById("roastBtn");
+  const roastOutput = document.getElementById("roastOutput");
+
+  roastBtn.onclick = () => {
+    const randomIndex = Math.floor(Math.random() * roasts.length);
+    roastOutput.textContent = roasts[randomIndex];
+  };
+</script>
